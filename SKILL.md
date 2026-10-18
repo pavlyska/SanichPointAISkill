@@ -183,18 +183,17 @@ PANEL или BULLETS: карточка или список с тезисами
 
 ---
 
-### Правила работы с фото (`IMAGE`): КРИТИЧЕСКИ ВАЖНО для доступности в РФ
-* Ссылки на фото должны быть **ПРЯМЫМИ ссылками на графический файл** (`.jpg`, `.png`, `.svg`, `.webp`), которые **100% стабильно открываются в России БЕЗ VPN**!
-* ✅ **Приоритетные прямые источники**:
-  - https://cdn.ruwiki.ru/commonswiki/files/thumb
-  - Рувики
-  - Обязательно ссылкой на прямую фотку в формате .png, .jpg и тд
-  - Официальные государственные порталы (`kremlin.ru`, `government.ru`, `duma.gov.ru`).
-  - Ведущие российские агентства и медиа (`ria.ru` / `cdnn21.img.ria.ru`, `tass.ru`, `rbc.ru`).
-  - Надежные CDN (`yandex.net`, `avatars.mds.yandex.net`, `userapi.com`).
+### Правила работы с фото (`IMAGE`): Прямые ссылки на изображения
+* Ссылки на фото должны быть **ПРЯМЫМИ ссылками на графический файл** (`.jpg`, `.png`, `.svg`, `.webp`), которые гарантированно загружаются в теге `<img>`!
+* ✅ **Рекомендуемые проверенные источники**:
+  - **Wikimedia Commons** — прямые CDN-ссылки `https://upload.wikimedia.org/wikipedia/commons/...` (например, `https://upload.wikimedia.org/wikipedia/commons/b/b8/Pyongyang_Arch_of_Triumph.jpg` или `.../thumb/.../800px-...jpg`). Они работают стабильно, быстро и содержат огромную базу качественных снимков.
+  - **Рувики** — зеркало файлов `https://cdn.ruwiki.ru/commonswiki/files/...`
+  - **Официальные государственные порталы** (`kremlin.ru`, `government.ru`, `duma.gov.ru`).
+  - **Ведущие информационные агентства** (`ria.ru` / `cdnn21.img.ria.ru`, `tass.ru`, `rbc.ru`).
+  - **Надежные CDN** (`yandex.net`, `avatars.mds.yandex.net`, `userapi.com`).
 * ❌ **СТРОГО ЗАПРЕЩЕНО**:
-  - Использовать страницы Википедии и редиректы вроде `https://commons.wikimedia.org/wiki/Special:FilePath/...` или `https://commons.wikimedia.org/wiki/File:...` — они не являются прямыми файлами картинок и могут не отображаться в тегах `<img>`!
-  - Использовать заблокированные платформы (Instagram, Facebook, X/Twitter, заблокированные СМИ).
+  - Использовать ссылки на HTML-страницы описания файлов вроде `https://commons.wikimedia.org/wiki/File:...` или `https://ru.wikipedia.org/wiki/...` — они возвращают веб-страницу, а не картинку! Ссылка ОБЯЗАТЕЛЬНО должна вести на сам файл (`upload.wikimedia.org/.../image.jpg`).
+  - Использовать заблокированные платформы (Instagram, Facebook, X/Twitter).
 * Формат: `IMAGE: прямая_ссылка_на_файл | Подпись`.
 
 ---
